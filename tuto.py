@@ -194,17 +194,17 @@ print('*********************************************************************')''
 
 
 # Programme qui permet de gérer une liste de courses
-import sys
+'''import sys
 
 from wcwidth import list_versions
 LISTE = []
-MENU = '''"Choisissez parmi les 5 options suivantes :
+MENU = Choisissez parmi les 5 options suivantes :
       1: Ajouter un élément à la liste
       2: Retirer un élément de la liste
       3: Afficher la liste
       4: Vider la liste
       5: Quitter
-      Votre choix : '''
+      Votre choix : 
       
 MENU_CHOICES = ['1', '2', '3', '4', '5']
 
@@ -240,11 +240,41 @@ while True:
             print("A bientôt !")
             sys.exit()
         
-        print("-" * 50)
+        print("-" * 50)'''
         
         
 # Programme du jeu mystère
-            
+from random import randint
+number_to_find = randint(0, 100)
+remaining_attempts = 5
+print("*** Le jeu du nombre mystère ***")
+
+# boucle principale
+while remaining_attempts > 0:
+    print(f"Il te reste {remaining_attempts} essai{'s' if remaining_attempts > 1 else ''}")
+    
+    # saisie de l'utilisateur
+    user_choice = input("Devine le nombre : ")
+    if not user_choice.isdigit(): 
+        print("Veuillez entrer un nombre valide.")
+        continue
+    user_choice = int(user_choice)    
+    if number_to_find > user_choice: # Plus grand
+        print(f"Le nombre mystère est plus grand que {user_choice}")
+    elif number_to_find < user_choice: # Plus petit
+        print(f"Le nombre mystère est plus petit que {user_choice}")
+    else: # Egal (succès)
+        break
+    remaining_attempts -= 1
+    
+    # gagné ou perdu
+    if remaining_attempts == 0:
+        print(f"Domage ! Le nombre mystère était {number_to_find}")
+    else:
+        print(f"Bravo ! Le nombre mytère était bien {number_to_find}")
+        print(f"Tu as trouvé le nombre en {6 - remaining_attempts} essai")
+        
+    print("Fin du jeu")
             
             
     
