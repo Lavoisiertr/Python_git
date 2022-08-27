@@ -244,7 +244,7 @@ while True:
         
         
 # Programme du jeu mystère
-from random import randint
+'''from random import randint
 number_to_find = randint(0, 100)
 remaining_attempts = 5
 print("*** Le jeu du nombre mystère ***")
@@ -274,7 +274,31 @@ while remaining_attempts > 0:
         print(f"Bravo ! Le nombre mytère était bien {number_to_find}")
         print(f"Tu as trouvé le nombre en {6 - remaining_attempts} essai")
         
-    print("Fin du jeu")
+    print("Fin du jeu")'''
+    
+# Programme qui permet d'implémenter un jeu
+'''
+ # Règles du jeu
+Le but de ce projet est de créer un jeu de rôle de textuel dans le terminal
+    * Le jeu comporte deux joueurs : vous et un ennemi.
+    * Vous commencez tous les deux avec 50 points de vie.
+    * Votre personnage dispose de 3 potions qui vous permettent de récupèrer des points de vie.
+    * L'ennemi ne dispose d'aucune potion.
+    * Chaque potion vous permet de récupérer un nombre aléatoire de points de vie, compris entre 15 et 50.
+    * Votre attaque inflige à l'ennemi des dégâts aléatoires compris entre 5 et 10 points de vie.
+    * l'attaque de l'ennemi vous inflige des dégâts aléatoires compris entre 5 et 15 points de vie.
+    * Lorsque vous utilisez une potion, vous passez le prochain tour.
+    
+# Déroulé de la partie
+Lorsque vous lancez le script, vous devez demander à l'utilisateur s'il souhaite attaquer ou utiliser une potion : 
+"Souhaitez-vous attaquer (1) ou utiliser une potion (2) ? "
+Cette phrase sera demandé à l'utilisateur au début de chaque tour.
+👉 Si l'utilisateur choisi la première option (1), vous infligez des points de dégât à l'ennemi.
+Ces points seront compris entre 5 et 10 et déterminés et déterminés aléatoirement par le programme.
+👉 Si l'utilisateur choisi la deuxième option (2), vous prenez une potion et vous passez le tour d'après.
+'''
+    
+ 
             
             
     
