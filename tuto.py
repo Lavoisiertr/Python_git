@@ -134,16 +134,17 @@ print('nombres_positifs_2 = ', nombres_positifs_2)'''
 
 
 # Exercice qui demande à l'utilisateur d'entrer 10 fois le nom utilisateur numéroté et commençant par 1 
-
 '''for i in range(1, 11):
     print('Utilisateur ' + str(i))
 '''
 
+# Programme qui permet d'afficher les lettres d'un mot en l'envers
 '''mot = 'Python'
 for l in reversed(mot):
-    print(l)    
+    print(l)'''    
  
- 
+# Programme qui permet d'utiliser la boucle while 
+'''
 continuer = 'o'
 while continuer == 'o':
     print('On continue !')
@@ -151,3 +152,33 @@ while continuer == 'o':
     if continuer == 'n' or continuer != 'n':
         print('FIN DU PROGRAMME. AUREVOIR !!!')'''
         
+# Programme qui demande à l'utilisateur de saisir deux nombres
+nom = input("Bonjour ! Quel est votre nom svp ? : ")
+print(f"Bienvenue {nom}, nous allons faire un petit jeu de mathématiques")
+print('')
+print('*********************************************************************')
+print('')
+print('\t\t\tJEU DE MATHEMATIQUES')
+print('')
+print('*********************************************************************')
+print('')
+a = b = ''
+while not (a.isdigit() and b.isdigit()):
+    a = input("Saisir le premier nombre : ")
+    b = input("Saisir le deuxième nombre : ")
+    if not (a.isdigit() and b.isdigit()):
+        print("Veuillez entrer deux nombres valides !")
+print(f"La somme entre {a} et {b} donne {int(a) + int(b)}")
+print(f"La différence entre {a} et {b} donne {int(a) - int(b)}")
+print(f"La multiplication de {a} par {b} donne {int(a) * int(b)}")
+print(f"La division entre {a} et {b} donne {int(a) / int(b)}")
+print(f"Le modulo de {a} et {b} donne {int(a) % int(b)}")
+print(f"{a} puissance {b} donne {int(a) ** int(b)}")
+print('')
+print('Programme terminé avec SUCCES !!!')
+print('')
+print('*********************************************************************')
+print('')
+print('\t\t\t\tFIN DU JEU')
+print('')
+print('*********************************************************************')
