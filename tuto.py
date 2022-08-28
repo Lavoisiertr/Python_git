@@ -204,7 +204,7 @@ MENU = Choisissez parmi les 5 options suivantes :
       3: Afficher la liste
       4: Vider la liste
       5: Quitter
-      Votre choix : 
+      👉 Votre choix : 
       
 MENU_CHOICES = ['1', '2', '3', '4', '5']
 
@@ -297,8 +297,52 @@ Cette phrase sera demandé à l'utilisateur au début de chaque tour.
 Ces points seront compris entre 5 et 10 et déterminés et déterminés aléatoirement par le programme.
 👉 Si l'utilisateur choisi la deuxième option (2), vous prenez une potion et vous passez le tour d'après.
 '''
+
+# Programme qui permet d'implémenter un jeu
+import random
+ENEMY_HEALTH = 50
+PLAYER_HEALTH = 50
+NUMBER_OF_POTIONS = 3
+SKIP_TURN = False
+
+while True:
+    # jeu du joueur
+    if SKIP_TURN:
+        print("Vous passez votre tour...")
+        SKIP_TURN = False
+    else:
+        user_choice = ''
+        while user_choice not in ['1', '2']:
+            user_choice = input("Souhaitez-vous attaquer (1) ou utiliser une potion (2) ? ")
+        if user_choice == '1': # Attaque
+            your_attack = random.randint(5, 10)
+            ENEMY_HEALTH -= your_attack
+            print(f"Vous avez infligé {your_attack} points de dégâts à l'ennemi ⚔️.")
+        elif user_choice == '2': # Potion
+            if NUMBER_OF_POTIONS > 0:
+                potion_health = random.randint(15, 50)
+                PLAYER_HEALTH += potion_health
+                NUMBER_OF_POTIONS -= 1
+                SKIP_TURN = True
+                print(f"Vous récupérez {potion_health} points de vie 🩸 {NUMBER_OF_POTIONS} 💉 restantes.")
+            else:
+                print("Vous n'avez plus de potions...")
+                continue
+    if ENEMY_HEALTH <= 0:
+        print("Vous avez gagné 💪.")
+        break
     
- 
-            
-            
+    # Attaque de l'ennemi
+    enemy_attack = random.randint(5, 15)
+    PLAYER_HEALTH -= enemy_attack
+    print(f"L'énémi vous a infligé {enemy_attack} points de dégâts ⚔️.")
     
+    if PLAYER_HEALTH <= 0:
+        print("Vous avez perdu 😢")
+        break
+
+    # Stats
+    print(f"Il vous reste {PLAYER_HEALTH} points de vie 🩸.")
+    print(f"Il reste {ENEMY_HEALTH} points de vie 🩸 à l'ennemi.")
+    print("_*_" * 50)
+print("*** FIN DU JEU ***")
