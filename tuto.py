@@ -299,7 +299,7 @@ Ces points seront compris entre 5 et 10 et déterminés et déterminés aléatoi
 '''
 
 # Programme qui permet d'implémenter un jeu
-import random
+'''import random
 ENEMY_HEALTH = 50
 PLAYER_HEALTH = 50
 NUMBER_OF_POTIONS = 3
@@ -345,4 +345,36 @@ while True:
     print(f"Il vous reste {PLAYER_HEALTH} points de vie 🩸.")
     print(f"Il reste {ENEMY_HEALTH} points de vie 🩸 à l'ennemi.")
     print("_*_" * 50)
-print("*** FIN DU JEU ***")
+print("*** FIN DU JEU ***")'''
+
+# Révision sur les bases de Python --> c'est important car la répétition est la mère des sciences
+
+def main():
+    '''print('Bonjour tout le monde !')
+    print('Python me passionne')
+    def moyenne_eleve(valeurs):
+        nom = input("Quel est votre nom ? : ")
+        resultat = sum(valeurs)/len(valeurs)
+        print(f"La moyenne de {nom} est {resultat}")
+        
+        
+    moyenne_eleve([14, 15, 17, 12, 14.5, 20, 18.75, 16.25])'''
+    print("Bonjour ! Je vais calculer ta moyenne ")
+    nom = input("Quel est ton nom ? : ")
+    print(f"Parfait {nom}, à présent je vais te demander d'entrer tes notes.")
+    note1 = float(input("Quelle est ta première note ? : "))
+    note2 = float(input("Quelle est ta deuxième note ? : "))
+    note3 = float(input("Quelle est ta troisième note ? : "))
+    note4 = float(input("Quelle est ta quatrième note ? : "))
+    note5 = float(input("Quelle est ta cinquième note ? : "))
+    print(f"Merci de m'avoir fourni tes notes {nom}")
+    notes = [note1, note2, note3, note4, note5]
+    moyenne = sum(notes)/len(notes)
+    print(f"{nom}, ta moyenne est donc Moyenne =", moyenne)
+    
+    
+    
+    
+    
+if __name__ == '__main__':
+    main()
