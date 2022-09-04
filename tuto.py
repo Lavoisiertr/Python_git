@@ -455,5 +455,62 @@ if reponse == 'oui':
 print(f"Vous devez payer au total {prix_total}€")
 print("Merci pour la paie et amusez vous bien monsieur!")'''
 
+# La notion des liste en Python
 
-    
+'''liste = ['Raoul', 'Amina', 'Rosine', 'Rodrigue', 'Patrick']
+
+print(liste)
+
+del liste[-1]
+
+print(liste)
+
+liste.pop(1)
+
+print(liste)
+
+liste.remove('Rosine')
+
+print(liste)
+
+liste.insert(1, 'SUCCES')
+
+print(liste)
+
+liste.insert(2, 'Le succes vous attend')
+
+print(liste)
+
+liste.insert(4, 'Vous êtes des héros')
+
+print(liste)
+
+from statistics import mean
+from random import shuffle
+from numpy import sort
+
+notes = [15.5, 14, 18, 15, 14.25, 18.25, 20,]
+
+resultat = mean(notes)
+
+print("La moyenne de cet élève est tout simplement", resultat)
+
+print(notes)
+
+shuffle(notes)
+
+print(notes)
+
+notes.sort()
+
+print(notes)
+
+# une autre façon de créer une liste
+
+infos = input("Entrer vos informations de la forme (email-pseudo-motdepasse) : ").split('-')
+
+print("Voici vos informations : ", infos)
+
+print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}.".format(pseudo=infos[1], email=infos[0], mdp=infos[2] ))'''
+
+   
