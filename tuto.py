@@ -457,7 +457,8 @@ print("Merci pour la paie et amusez vous bien monsieur!")'''
 
 # La notion des listes en Python
 
-'''liste = ['Raoul', 'Amina', 'Rosine', 'Rodrigue', 'Patrick']
+'''
+liste = ['Raoul', 'Amina', 'Rosine', 'Rodrigue', 'Patrick']
 
 print(liste)
 
@@ -511,7 +512,7 @@ infos = input("Entrer vos informations de la forme (email-pseudo-motdepasse) : "
 
 print("Voici vos informations : ", infos)
 
-print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}.".format(pseudo=infos[1], email=infos[0], mdp=infos[2] ))'''
+print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}.".format(pseudo=infos[1], email=infos[0], mdp=infos[2] ))
 
 # Exercice à faire: Système de générateur de phrases
 
@@ -536,3 +537,21 @@ elif len(generateur_mots) >= 10:
     print("Les 3 derniers mots de la liste sont donc:")
     print(generateur_mots[-3], generateur_mots[-2], generateur_mots[-1])
 
+
+# Afficher un message à l'utilisateur lui demandant de saisir un entier n
+n = int(input("Saisir un entier de son choix : "))
+# Fonction qui calcul la factorielle de cet entier, ici n
+def calcul_factorielle(n):
+    factorielle = 1
+    for i in range(1, n+1):
+        factorielle*=i
+        return factorielle
+# Construction du dictionnaire demandé
+dictionnaire = dict({})
+for i in range(1, n+1):
+    dictionnaire[i] = calcul_factorielle(i)
+print("Le dictionnaire des factorielle est:", dictionnaire)
+
+dico = {5: ('1!', '2!', '3!', '4!', '5!'), 3: ('1!', '2!', '3!'), 1: ('1!')}
+
+print(dico)'''
