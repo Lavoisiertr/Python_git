@@ -455,7 +455,7 @@ if reponse == 'oui':
 print(f"Vous devez payer au total {prix_total}€")
 print("Merci pour la paie et amusez vous bien monsieur!")'''
 
-# La notion des liste en Python
+# La notion des listes en Python
 
 '''liste = ['Raoul', 'Amina', 'Rosine', 'Rodrigue', 'Patrick']
 
@@ -513,4 +513,26 @@ print("Voici vos informations : ", infos)
 
 print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}.".format(pseudo=infos[1], email=infos[0], mdp=infos[2] ))'''
 
-   
+# Exercice à faire: Système de générateur de phrases
+
+# 1. Demander en console une chaîne de la forme mot1/mot2/mot3/mot4/mot5/mot6/mot7...
+# 2. Transformer cette chaîne en une liste
+# 3. La mélanger
+# 4. Si le nombre d'éléments de cette liste est inférieur à 10, alors afficher uniquement les deux premiers mots
+# 5. Si le nombre d'éléments de cette liste est supérieur ou égal à 10, alors afficher les trois derniers mots
+from random import shuffle
+generateur_mots = input("Entrer une chaîne de la forme (mot1/mot2/mot3/mot4/mot5/mot6/mot7/mot8/mot9/mot10) : ").split("/")
+# Affichage de la liste de mots
+print(generateur_mots)
+# Mélange de la liste de mots
+shuffle(generateur_mots)
+# Affichage encore de la liste de mots
+print(generateur_mots)
+print("Le nombre d'éléments de cette liste est", len(generateur_mots))
+if len(generateur_mots) < 10:
+    print("Les 2 premiers mots de la liste sont donc:")
+    print(generateur_mots[0], generateur_mots[1])
+elif len(generateur_mots) >= 10:
+    print("Les 3 derniers mots de la liste sont donc:")
+    print(generateur_mots[-3], generateur_mots[-2], generateur_mots[-1])
+
