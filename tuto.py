@@ -359,6 +359,8 @@ def main():
         
         
     moyenne_eleve([14, 15, 17, 12, 14.5, 20, 18.75, 16.25])'''
+    
+    '''
     print("Bonjour ! Je vais calculer ta moyenne ")
     nom = input("Quel est ton nom ? : ")
     print(f"Parfait {nom}, à présent je vais te demander d'entrer tes notes.")
@@ -370,7 +372,35 @@ def main():
     print(f"Merci de m'avoir fourni tes notes {nom}")
     notes = [note1, note2, note3, note4, note5]
     moyenne = sum(notes)/len(notes)
-    print(f"{nom}, ta moyenne est donc Moyenne =", moyenne)
+    print(f"{nom}, ta moyenne est donc Moyenne =", moyenne)'''
+    
+    # Exercice à faire
+    # 1. Récoler la valeur du porte monnaie d'une personne
+    # 2. Créer un produit qui aura pour valeur 50€
+    # 3. Afficher la nouvelle valeur du porte  monnaie de la personne qui a achetée après son achat
+    
+    # Solution de l'exercice
+    
+    print("Bonjour madame! Bienvenue dans notre supermarché !")
+    
+    input("Dites Bonjour également ... : ")
+    
+    wallet = int(input("Combien avez-vous dans votre porte-monnaie ? : "))
+    
+    produit = input("Merci pour votre collaboration. Quel est le produit que vous désirez ? : ")
+    
+    print("D'accord madame. Ce produit coûte 50€ seulement prix promo")
+    
+    reponse = input("Vous l'acheter ? oui ou non ? : ")
+    
+    if reponse == 'oui':
+        print("Après achat de ce produit, il vous reste", wallet - 50, '€ madame !')
+    elif reponse == 'non':
+        print("Vous pouvez choisir un autre produit madame car la valeur de votre porte monnaie est toujours", wallet, "€")
+    else:
+        print("Je n'ai pas compris votre reponse madame.")
+    
+    
     
     
     
