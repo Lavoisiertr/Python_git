@@ -347,10 +347,10 @@ while True:
     print("_*_" * 50)
 print("*** FIN DU JEU ***")'''
 
-# Révision sur les bases de Python --> c'est important car la répétition est la mère des sciences
+# Révision sur les bases de Python --> c'est important car la répétition, c'est la mère des sciences
 
-def main():
-    '''print('Bonjour tout le monde !')
+'''def main():
+    print('Bonjour tout le monde !')
     print('Python me passionne')
     def moyenne_eleve(valeurs):
         nom = input("Quel est votre nom ? : ")
@@ -358,9 +358,9 @@ def main():
         print(f"La moyenne de {nom} est {resultat}")
         
         
-    moyenne_eleve([14, 15, 17, 12, 14.5, 20, 18.75, 16.25])'''
+    moyenne_eleve([14, 15, 17, 12, 14.5, 20, 18.75, 16.25])
     
-    '''
+    
     print("Bonjour ! Je vais calculer ta moyenne ")
     nom = input("Quel est ton nom ? : ")
     print(f"Parfait {nom}, à présent je vais te demander d'entrer tes notes.")
@@ -381,7 +381,7 @@ def main():
     
     # Solution de l'exercice
     
-    print("Bonjour madame! Bienvenue dans notre supermarché !")
+''' print("Bonjour madame! Bienvenue dans notre supermarché !")
     
     input("Dites Bonjour également ... : ")
     
@@ -399,12 +399,31 @@ def main():
         print("Vous pouvez choisir un autre produit madame car la valeur de votre porte monnaie est toujours", wallet, "€")
     else:
         print("Je n'ai pas compris votre reponse madame.")
-    
-    
-    
-    
-    
-    
-    
+            
 if __name__ == '__main__':
     main()
+'''
+
+# Les conditions
+
+'''wallet = 5000
+
+computer_price = 1200
+
+# Vérifier si le prix de l'ordinateur est inférieur à 1000€
+
+if computer_price < 1000:
+    print("Le prix de l'ordinateur est bien inférieur à 1000€.")
+else:
+    print("Non, le prix de l'ordinateur est supérieur à 1000€.")'''
+    
+# Système de vérification de mot de passe
+
+mdp = input("Entrer votre mot de passe ICI : ")
+
+longeur_mdp = len(mdp)
+
+if longeur_mdp <= 8:
+    print("Mot de passe trop court")
+else:
+    print("Mot de passe valide!")
