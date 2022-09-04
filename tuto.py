@@ -419,11 +419,41 @@ else:
     
 # Système de vérification de mot de passe
 
-mdp = input("Entrer votre mot de passe ICI : ")
+'''mdp = input("Entrer votre mot de passe ICI : ")
 
 longeur_mdp = len(mdp)
 
 if longeur_mdp <= 8:
     print("Mot de passe trop court")
 else:
-    print("Mot de passe valide!")
+    print("Mot de passe valide!")'''
+    
+
+# Exercice à faire: place de cinéma
+# 1. Récolter l'âge de la personne qui achète les billets "Quel est votre âge?"
+# 2. Si la personne est mineur, elle devra payer 7€
+# 3. Si la personne est majeur, elle devra payer 12€
+# 4. Démander si la personne veut du pop-corn
+# 5. Si la personne répond oui, ajouter +5€ dans le prix total à payer
+# 6. Afficher le prix total à payer
+
+# Solution de l'exercice: place de cinéma
+
+'''print("BIENVENUE AU CINEMA")
+age = int(input("Bonjour monsieur! Quel est votre âge ? : "))
+reponse = input("Merci pour votre collaboration. Voulez-vous du pop-corn ? oui ou non ? : ")
+print("Bien monsieur...")
+if age >= 18:
+    print("Vous êtes majeur. Vous devez donc payer 12€ pour le billet")
+    prix_total = 12 
+else:
+    print("Vous êtes mineur. Vous devez donc payer 7€ pour le billet")
+    prix_total = 7
+if reponse == 'oui':
+        prix_total+=5
+    
+print(f"Vous devez payer au total {prix_total}€")
+print("Merci pour la paie et amusez vous bien monsieur!")'''
+
+
+    
