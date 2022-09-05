@@ -764,8 +764,14 @@ player_01.attack_player(player_02)
 print(f"{player_02.get_pseudo()} a subi {player_01.get_attack()} dégâts de la part de {player_01.get_pseudo()}, il lui reste {player_02.get_helth()} points de vie.")
 print("FIN DU COMBAT")'''
 
+# Révision sur les modules en Python
 
+'''import random
 
+a = random.uniform(2, 5) # permet de donner des valeurs dicimales aléatoirement
+
+print(a)'''
+    
 
     
 
