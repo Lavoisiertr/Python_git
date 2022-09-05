@@ -683,8 +683,90 @@ add(2)'''
 
 get_vowels_numbers("Bonjour tout le monde ")'''
 
+# La programmation orientée OBJET en Python
 
+'''class Voiture():
+    marque = 'Peugeot'
+    couleur = 'Bleue'
     
+#print(f"La couleur de ma voiture est {Voiture.couleur}")
+#print(f"La marque de ma voiture est {Voiture.marque}")
+
+voiture_01 = Voiture()
+
+print(f"J'ai à ma possession une voiture de couleur {voiture_01.couleur} et de marque {voiture_01.marque}")
+
+Voiture.couleur = 'noir'
+
+Voiture.marque = 'Porsche'
+
+print(f"J'ai à ma possession une voiture de couleur {voiture_01.couleur} et de marque {voiture_01.marque}")
+
+voiture_02 = Voiture()
+
+voiture_01.couleur = 'Rouge'
+voiture_01.marque = 'Toyota'
+voiture_02.couleur = 'grise'
+voiture_02.marque = 'Lamborghini'
+
+print(f"Ma première voiture à une couleur {voiture_01.couleur} et de marque {voiture_01.marque}")
+print(f"Ma deuxième voiture à une couleur {voiture_02.couleur} et de marque {voiture_02.marque}")
+
+class Voiture():
+    def __init__(self, marque, couleur):
+        self.marque = marque
+        self.couleur = couleur
+        
+    def afficher_marque(self):
+        print(f"Ma voiture est de marque {self.marque}")
+    
+    def afficher_couleur(self):
+        print(f"Ma voiture est de couleur {self.couleur}")
+
+voiture_01 = Voiture('Peugeot', 'Grise')
+voiture_02 = Voiture('Lamborghini', 'noir')
+
+voiture_01.afficher_couleur()
+voiture_01.afficher_marque()
+voiture_02.afficher_couleur()
+voiture_02.afficher_marque()
+
+#print(f"Voiture_01: marque --> {voiture_01.marque}, couleur --> {voiture_01.couleur}")
+#rint(f"Voiture_02: marque --> {voiture_02.marque}, couleur --> {voiture_02.couleur}")
+
+class Personnage():
+    def dit(self, message):
+        print(message)
+        
+Lavoisier_TR = Personnage()
+
+Lavoisier_TR.dit("Bonjour tout le monde! J'apprends la POO")
+
+from model.player import Player
+from model.weapon import Weapon
+
+knife = Weapon('couteau', 3)  
+player_01 = Player('Lavoisier_TR', 10, 5)
+player_02 = Player('Graven', 5, 3)
+
+player_01.set_weapon(knife) # donne un couteau faisant 3 dégâts au joueur !
+
+
+player_01.bienvenue()
+player_02.bienvenue()
+#print(f"{player_02.get_pseudo()}, initialement vous avez {player_02.get_helth()} points de vie.")
+#player_02.damage(2)
+#print(f"{player_02.get_pseudo()}, il vous reste maintenant {player_02.get_helth()} points de vie.")
+
+print(f"DEBUT DU COMBAT")
+print(f"{player_01.get_pseudo()} attaque {player_02.get_pseudo()}")
+player_01.attack_player(player_02)
+print(f"{player_02.get_pseudo()} a subi {player_01.get_attack()} dégâts de la part de {player_01.get_pseudo()}, il lui reste {player_02.get_helth()} points de vie.")
+print("FIN DU COMBAT")'''
+
+
+
+
     
 
 
