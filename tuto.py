@@ -660,7 +660,32 @@ print(f"La valeur maximale entre a et b est {max_value}")'''
     
 add(2)'''
 
+# Exercice à faire
 
+'''# Ecrire une fonction permettant de calculer le nombre de voyelles dans un mot, il sera pris en paramètre
+# 1. Définir une fonction get_vowels_numbers(mot) qui va prendre en paramètre un mot
+# 2. Créer un compteur de voyelles
+# 3. Pour chaque lettre du mot vous vérifiez s'il s'agit d'une voyelle
+# 4. Si c'est le cas on ajoute 1 au compteur
+# 5. A la fin de la fonction, vous allez renvoyer le compteur pour savoir le nombre de voyelles dans ce mot.'''
+
+# Correction de l'exercice
+
+'''def get_vowels_numbers(mot):
+    liste_voyelle = ['a', 'e', 'i', 'o', 'u', 'y']
+    compteur_voyelles = 0
+    for lettre in mot:
+        if lettre in liste_voyelle:
+            compteur_voyelles+=1
+    print(f"{mot} contient {compteur_voyelles} voyelles")
+    return compteur_voyelles
+
+
+get_vowels_numbers("Bonjour tout le monde ")'''
+
+
+    
+    
 
 
 
