@@ -512,7 +512,7 @@ infos = input("Entrer vos informations de la forme (email-pseudo-motdepasse) : "
 
 print("Voici vos informations : ", infos)
 
-print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}.".format(pseudo=infos[1], email=infos[0], mdp=infos[2] ))
+print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}.".format(pseudo=infos[1], email=infos[0], mdp=infos[2] ))'''
 
 # Exercice à faire: Système de générateur de phrases
 
@@ -521,7 +521,10 @@ print("Bonjour {pseudo}, votre email est {email} et votre mot de passe est {mdp}
 # 3. La mélanger
 # 4. Si le nombre d'éléments de cette liste est inférieur à 10, alors afficher uniquement les deux premiers mots
 # 5. Si le nombre d'éléments de cette liste est supérieur ou égal à 10, alors afficher les trois derniers mots
-from random import shuffle
+
+# Solution de lexercice: système de générateur de phrases
+
+'''from random import shuffle
 generateur_mots = input("Entrer une chaîne de la forme (mot1/mot2/mot3/mot4/mot5/mot6/mot7/mot8/mot9/mot10) : ").split("/")
 # Affichage de la liste de mots
 print(generateur_mots)
@@ -535,11 +538,12 @@ if len(generateur_mots) < 10:
     print(generateur_mots[0], generateur_mots[1])
 elif len(generateur_mots) >= 10:
     print("Les 3 derniers mots de la liste sont donc:")
-    print(generateur_mots[-3], generateur_mots[-2], generateur_mots[-1])
+    print(generateur_mots[-3], generateur_mots[-2], generateur_mots[-1])'''
 
 
-# Afficher un message à l'utilisateur lui demandant de saisir un entier n
-n = int(input("Saisir un entier de son choix : "))
+# Afficher un message à l'utilisateur lui demandant de saisir un entier n dans le but de calculer la factorielle
+
+'''n = int(input("Saisir un entier de son choix : "))
 # Fonction qui calcul la factorielle de cet entier, ici n
 def calcul_factorielle(n):
     factorielle = 1
@@ -557,8 +561,8 @@ dico = {5: ('1!', '2!', '3!', '4!', '5!'), 3: ('1!', '2!', '3!'), 1: ('1!')}
 print(dico)'''
 
 # Notion des boucles
-'''
-for i in range(1, 6):
+
+'''for i in range(1, 6):
     print("Vous êtes le client n°", i)
     
 a = 1
@@ -573,18 +577,19 @@ for email in emails:
     if email in blacklist:
         print(f"Envoi interdit à {email}")
         continue # or break
-    print(f"Email envoyé à {email}")
+    print(f"Email envoyé à {email}")'''
     
     
 # Exercice à faire: jeu du juste prix
 
-# 1. Choisir un nombre entre 1 et 1000
+'''# 1. Choisir un nombre entre 1 et 1000
 # 2. Tant que le jeu n'est pas fini, démander à l'utilisateur d'entrer un prix
 # 3. S'il trouve le juste prix c'est gagné
-# 4. S'il ne trouve pas le juste prix on affiche c'est moins ou c'est plus
+# 4. S'il ne trouve pas le juste prix on affiche c'est moins ou c'est plus'''
 
 # Solution de l'exercice: jeu du juste prix
-from random import randint
+
+'''from random import randint
 
 just_price = randint(1, 1000)
 while True:
@@ -597,4 +602,65 @@ while True:
     else:
         print("C'est plus")
 print("Fin du jeu") '''
+
+# Notion de fonctions
+
+'''year = 2022
+
+def next_year():
+    global year
+    print(f"Fin de l'année {year}")
+    year+=1
+    print("Début de l'année {annee_suivante}".format(annee_suivante=year))
+    
+
+next_year()
+next_year()
+next_year()
+next_year()
+next_year()
+
+def addition():
+    resultat = 5 + 5
+    print(f"Le résultat de 5 + 5 donne {resultat}")
+    return resultat
+
+a = addition()
+
+b = 8
+
+c = a + b
+
+print(c)'''
+
+# Exercice d'application 
+
+'''# Créer une fonction max() qui va renvoyer le résultat le plus haut parmi deux valeurs'''
+
+# Correction de l'exercice d'application
+
+'''def max(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+    
+first_value = int(input("Veuillez saisir la valeur de (a) : "))
+second_value = int(input("Veuillez saisir la valeur de (b) : "))
+max_value = max(first_value, second_value)
+print(f"La valeur maximale entre a et b est {max_value}")'''
+
+# Notion de récursivité --> fonction qui s'appelle elle-même
+
+'''def add(a):
+    a+=1
+    print(a)
+    if a < 20:
+        add(a)
+    
+add(2)'''
+
+
+
+
 
