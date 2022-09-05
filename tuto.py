@@ -555,3 +555,22 @@ print("Le dictionnaire des factorielle est:", dictionnaire)
 dico = {5: ('1!', '2!', '3!', '4!', '5!'), 3: ('1!', '2!', '3!'), 1: ('1!')}
 
 print(dico)'''
+
+# Notion des boucles
+'''
+for i in range(1, 6):
+    print("Vous êtes le client n°", i)
+    
+a = 1
+while a < 6:
+    print("Vous êtes la", a, "ème femme")
+    a+=1
+
+# Itération des éléments d'une liste grâce à la boucle for
+emails = ['tchoing50@gmail.com', 'lavoisiertr50@gmail.com', 'raoul3gg@gmail.com', 'programmeur550@gmail.com']
+blacklist = ['raoul3gg@gmail.com']
+for email in emails:
+    if email in blacklist:
+        print(f"Envoi interdit à {email}")
+        continue # or break
+    print(f"Email envoyé à {email}")'''
