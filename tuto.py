@@ -573,4 +573,28 @@ for email in emails:
     if email in blacklist:
         print(f"Envoi interdit à {email}")
         continue # or break
-    print(f"Email envoyé à {email}")'''
+    print(f"Email envoyé à {email}")
+    
+    
+# Exercice à faire: jeu du juste prix
+
+# 1. Choisir un nombre entre 1 et 1000
+# 2. Tant que le jeu n'est pas fini, démander à l'utilisateur d'entrer un prix
+# 3. S'il trouve le juste prix c'est gagné
+# 4. S'il ne trouve pas le juste prix on affiche c'est moins ou c'est plus
+
+# Solution de l'exercice: jeu du juste prix
+from random import randint
+
+just_price = randint(1, 1000)
+while True:
+    user_price = int(input("Choisir le juste prix : "))
+    if user_price == just_price:
+        print("Bravo ! Prix trouvé.")
+        break
+    elif user_price > just_price:
+        print("C'est moins")
+    else:
+        print("C'est plus")
+print("Fin du jeu") '''
+
