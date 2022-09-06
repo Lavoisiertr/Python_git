@@ -1038,4 +1038,57 @@ chat2.SePresenter()  # Bonjour, je suis un chat et je m'appelle Garfield
 personne = Personne("Jean")
 personne.SePresenter()  # Bonjour, je suis une personne et je m'appelle Jean'''
 
+# Liste d'objets
+
+#---DEFINITION---
+
+''' class Personne:
+    def __init__(self, nom = '', age = 0):
+        self.nom = nom
+        self.age = age
+        print(f"Constructeur personne: {nom}, {age} ans.")
+        
+    def se_presenter(self):
+        self.demander_nom()
+        infos_personne = f"Bonjour je m'appelle {self.nom}"
+        if self.age != 0:
+            infos_personne+=f", j'ai {self.age} ans."
+        print(infos_personne)
+        if self.age!=0:    
+            if self.est_majeur():
+                print("Je suis majeur")
+            else:
+                print("Je suis mineur")
+           
+    def est_majeur(self):
+        return self.age >= 18
+    
+    def demander_nom(self):
+        if self.nom == '':
+            self.nom = input('Quel est votre nom ? : ')
+    
+    def demander_age(self):
+       if self.age == 0:
+            self.age = int(input("Quel est votre âge ? : "))
+
+#---UTILISATION---
+
+# personne1 = Personne('Jean', 30)
+# personne2 = Personne('Paul', 15)    # Création des personnes à partir de la classe Personne()
+
+liste_personnes = (Personne('Jean', 30), Personne('Paul', 15), Personne())
+
+for personnes in liste_personnes:
+    personnes.se_presenter()
+
+# liste_personnes = (personne1, personne2)
+
+# personne3 = Personne()
+# personne4 = Personne(age=20)
+# personne1.se_presenter()
+# personne2.se_presenter()   # Méthodes d'instance
+# personne3.se_presenter()
+# personne4.se_presenter() '''
+
+
 
