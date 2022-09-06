@@ -1090,5 +1090,53 @@ for personnes in liste_personnes:
 # personne3.se_presenter()
 # personne4.se_presenter() '''
 
+# POO EXERCICE DE MISE EN SITUATION 4
 
+# ---
+''' class Personne:
+    def __init__(self, nom: str):
+        self.nom = nom
+
+    def SePresenter(self):
+        print("Bonjour, je m'appelle " + self.nom)
+
+# ---
+noms = []
+noms.append(input("nom de la personne 1 : "))
+noms.append(input("nom de la personne 2 : "))
+noms.append(input("nom de la personne 3 : "))
+
+l = []
+
+for nom in noms:
+    l.append(Personne(nom))
+
+for p in l:
+    print(p.SePresenter()) '''
+
+# POO CORRECTION EXERCICE DE MISE EN SITUATION 4
+
+# ---
+''' class Personne:
+    def __init__(self, nom: str):
+        self.nom = nom
+
+    def SePresenter(self):
+        print("Bonjour, je m'appelle " + self.nom)
+
+# ---
+nombre_personnes = 3
+noms = []
+for i in range(nombre_personnes):
+    noms.append(input("nom de la personne " + str(i+1) + " : "))
+
+liste_personnes = []
+
+for nom in noms:
+    liste_personnes.append(Personne(nom))
+    
+
+for personne in liste_personnes:
+    personne.SePresenter() '''
+    
 
