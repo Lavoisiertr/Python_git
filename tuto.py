@@ -771,7 +771,50 @@ print("FIN DU COMBAT")'''
 a = random.uniform(2, 5) # permet de donner des valeurs dicimales aléatoirement
 
 print(a)'''
+
+# Un clin d'oeil sur la Programmation Orientée Objet --> POO ou Object Oriented Programming --> OPP en anglais
+
+class Personne:
+    def __init__(self, nom = '', age = 0):
+        self.nom = nom
+        self.age = age
+        print(f"Constructeur personne: {nom}, {age} ans.")
+        
+    def se_presenter(self):
+        self.demander_nom()
+        if self.age == 0:
+            print(f"Bonjour je m'appelle {self.nom}.")
+        else:
+             print(f"Bonjour je m'appelle {self.nom}, j'ai {self.age} ans.")
+        #if self.est_majeur():
+        #    print("Je suis majeur")
+        #else:
+        #    print("Je suis mineur")
+           
+    def est_majeur(self):
+        return self.age >= 18
     
+    def demander_nom(self):
+        if self.nom == '':
+            self.nom = input('Quel est votre nom ? : ')
+    
+    #def demander_age(self):
+    #   if self.age == 0:
+    #        self.age = int(input("Quel est votre âge ? : "))
+
+
+personne1 = Personne('Jean', 30)
+personne2 = Personne('Paul', 15)
+personne3 = Personne('Lavoiser', 25)
+personne1.se_presenter()
+#print(f"Est majeur : {personne1.est_majeur()}")
+personne2.se_presenter()
+#print(f"Est majeur : {personne2.est_majeur()}")
+personne3.se_presenter()
+
+
+
+
 
     
 
