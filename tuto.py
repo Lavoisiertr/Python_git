@@ -1307,4 +1307,35 @@ student_2 = Student('Donald', 'CMR002', 2)
 student_1.Computer_innerClass(4, 2.9, 'Lenovo', student_1.get_name()).configuration()
 student_2.Computer_outerClass(2, 1.5, 'Easus', student_2.get_name()).configuration()'''
 
+# INHERITANCE IN OOP --> HERITAGE EN POO
+# Il existe plusieurs types d'héritage à savoir : 
+# B --> A : single inheritance ou héritage simple en français
+# C --> B --> A : multilevel ou héritage à plusieurs niveaux en français
+# C --> B && C --> A : multiple inheritance ou héritage multiple en français
+
+'''class A:
+    def feature_1(self):
+        print('inside class A')
+        
+
+class B(A):
+    def feature_2(self):
+        print('inside class B')
+
+
+class C(B):
+    def feature_3(self):
+        print('inside class C')
+        
+a = A()
+b = B()
+c = C()
+# a.feature_1()
+# b.feature_1()
+# c.feature_3()
+c.feature_2()
+c.feature_1()
+c.feature_3()'''
+
+
 
