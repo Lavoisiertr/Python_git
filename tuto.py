@@ -1337,5 +1337,35 @@ c.feature_2()
 c.feature_1()
 c.feature_3()'''
 
+# ENCAPSULATION EN POO
+
+'''class Eleve:
+    def __init__(self, nom: str, age: int):
+        self.__nom = nom
+        self.__age = age
+        
+    def get_nom(self):
+        return self.__nom
+
+    def get_age(self):
+        return self.__age
+    
+    def set_nom(self, value):
+        self.__nom = value
+        
+    def set_age(self, value):
+        self.__age = value
+        
+    def se_presenter(self):
+        print(f"Bonjour tout le monde! Je m'appelle {self.get_nom()}, j'ai {self.get_age()} ans.")
+    
+    
+
+eleve_1= Eleve('Lavoisier', 29)
+eleve_2= Eleve('Graven', 25)
+
+eleve_1.se_presenter()
+eleve_2.se_presenter()'''
+
 
 
