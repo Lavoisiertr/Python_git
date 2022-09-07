@@ -1182,22 +1182,6 @@ liste_personnes = (Personne('Jean', 30),
 for personnes in liste_personnes:
     personnes.se_presenter()'''
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # liste_personnes = (personne1, personne2)
 
 # personne3 = Personne()
@@ -1206,5 +1190,56 @@ for personnes in liste_personnes:
 # personne2.se_presenter()   # Méthodes d'instance
 # personne3.se_presenter()
 # personne4.se_presenter() 
+
+# POO in Python
+
+class Student:
+    school_name = 'Lavoisier programmer'
+    def __init__(self, name = 'No name', matriculate = 'No matriculate', number = 'No number'):
+        self.name = name
+        self.matriculate = matriculate
+        self.number = number    
+        
+    # Il existe deux sous méthodes de la méthode d'instance : les geteurs ou accesseurs et les seteurs ou mutateurs 
+    
+    def get_name(self):
+        return self.name
+    
+    def get_matriculate(self):
+        return self.matriculate
+    
+    def get_number(self):
+        return self.number
+    
+    def set_matriculate(self, value):
+        self.matriculate = value
+        
+    # Méthode de classe
+    @classmethod  # On appelle ça les décodeurs
+    def get_schoolName(cls):
+        return cls.school_name
+    
+    # Méthode statique
+    #@staticmethod       # On appelle ça les décodeurs
+    #def infos():
+    #    print("Cet étudiant aime le langage de programmation Python.") '''
+    
+    # Méthode d'instance
+        
+    def info_student(self):
+        print(f"Student of N°{self.get_number()} his name is {self.get_name()} and his registration number is {self.get_matriculate()}. School name is {Student.get_schoolName()}")
+    
+    
+
+student_1 = Student('Lavoisier', 'CMR001', 1)
+student_2 = Student('Donald', 'CMR002', 2)
+student_3 = Student('Graven', 'CMR004', 3)
+student_4 = Student()
+
+student_3.set_matriculate('CMR003')
+student_1.info_student()
+student_2.info_student()
+student_3.info_student()
+student_4.info_student()
 
 
