@@ -1193,7 +1193,7 @@ for personnes in liste_personnes:
 
 # POO in Python
 
-class Student:
+''' class Student:
     school_name = 'Lavoisier programmer'
     def __init__(self, name = 'No name', matriculate = 'No matriculate', number = 'No number'):
         self.name = name
@@ -1222,7 +1222,7 @@ class Student:
     # Méthode statique
     #@staticmethod       # On appelle ça les décodeurs
     #def infos():
-    #    print("Cet étudiant aime le langage de programmation Python.") '''
+    #    print("Cet étudiant aime le langage de programmation Python.")
     
     # Méthode d'instance
         
@@ -1240,6 +1240,71 @@ student_3.set_matriculate('CMR003')
 student_1.info_student()
 student_2.info_student()
 student_3.info_student()
-student_4.info_student()
+student_4.info_student() '''
+
+# OUTER AND INNER CLASS --> CLASSES EXTERIEUR ET INTERIEUR
+
+'''class Student: # Outer Class
+    school_name = 'Lavoisier programmer'
+    def __init__(self, name = 'No name', matriculate = 'No matriculate', number = 'No number'):
+        self.name = name
+        self.matriculate = matriculate
+        self.number = number
+        self.Computer_outerClass = self.Computer_innerClass
+        
+    # Il existe deux sous méthodes de la méthode d'instance : les geteurs ou accesseurs et les seteurs ou mutateurs 
+    
+    def get_name(self):
+        return self.name
+    
+    def get_matriculate(self):
+        return self.matriculate
+    
+    def get_number(self):
+        return self.number
+    
+    def set_matriculate(self, value):
+        self.matriculate = value
+        
+    # Méthode de classe
+    @classmethod  # On appelle ça les décodeurs
+    def get_schoolName(cls):
+        return cls.school_name
+    
+    # Méthode statique
+    #@staticmethod       # On appelle ça les décodeurs
+    #def infos():
+    #    print("Cet étudiant aime le langage de programmation Python.")
+    
+    # Méthode d'instance
+        
+    def info_student(self):
+        print(f"Student of N°{self.get_number()} his name is {self.get_name()} and his registration number is {self.get_matriculate()}. School name is {Student.get_schoolName()}")
+    
+    class Computer_innerClass:  # Inner Class
+        def __init__(self, RAM, CPU, Mark, name):
+            self.RAM = RAM
+            self.CPU = CPU
+            self.Mark = Mark
+            self.name = name
+            
+        def get_RAM(self):
+            return self.RAM
+        
+        def get_CPU(self):
+            return self.CPU
+        
+        def get_Mark(self):
+            return self.Mark
+          
+        def configuration(self):
+            print(f"La machine appartenant à l'étudiant {Student.get_name(self)} possède les caractéristiques suivantes: \n\tRAM : {self.get_RAM()} \n\tCPU : {self.get_CPU()} \n\tMark : {self.get_Mark()}")
+       
+            
+student_1 = Student('Lavoisier', 'CMR001', 1)
+student_2 = Student('Donald', 'CMR002', 2)
+
+student_1.Computer_innerClass(4, 2.9, 'Lenovo', student_1.get_name()).configuration()
+student_2.Computer_outerClass(2, 1.5, 'Easus', student_2.get_name()).configuration()'''
 
 
