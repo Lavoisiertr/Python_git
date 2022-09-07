@@ -1367,5 +1367,101 @@ eleve_2= Eleve('Graven', 25)
 eleve_1.se_presenter()
 eleve_2.se_presenter()'''
 
+# Polymorphisme en Python
+# poly = many = plusieurs
+# morph = form = formes
+
+# "If it looks like a duck, swims like a duck and quacks like a duck, then it probably is a duck" --> "S'il est comme un canard, nage comme un canard et cri comme un canard, probablement il est un canard."
+
+# Nous allons voir 4 concepts concernant le polymorphisme en Python :
+# 1. Duck typing --> Utilisation d'une méthode venant de plusieurs classes et ayant le même nom
+# 2. Operator overloading --> Surcharge des opérateurs
+# 3. Method overloading --> Surcharge des méthodes
+# 4. Method overriding --> Méthode primordiale
+
+## --> DUCK TYPING == Une méthode venant de plusieurs classes avec un nom identique
+
+'''class Visual_studio_code:
+    def execute(self):
+        print('Edition\nDébogage\nColoration syntaxique')
+        
+class Pycharm:
+    def execute(self):
+         print('Python est un langage multiparadigme')
+         
+class Python:
+    def execute(self):
+        print('Python est un langage interprété.')
+
+
+class Laptop:
+    def code(self, ide):
+        ide.execute()
+
+
+ide = Visual_studio_code() #Python() #Pycharm()
+laptop_1 = Laptop()
+
+laptop_1.code(ide)'''
+
+## --> OPERATOR OVERLOADING == Surcharge des opérateurs (Union des objets)
+
+'''a = 5.2
+b = 8.2
+
+print(a+b)
+print(float.__add__(a,b))
+
+class Student:
+    def __init__(self, moyenne_1, moyenne_2):
+        self.moyenne_1 = moyenne_1
+        self.moyenne_2 = moyenne_2
+        
+    def __add__(self, other):
+        r1 = self.moyenne_1 + other.moyenne_1
+        r2 = self.moyenne_2 + other.moyenne_2
+        student_3 = Student(r1, r2)
+        return student_3 
+        
+        
+student_1 = Student(12, 18)
+student_2 = Student(12, 19)
+student_3 = student_1 + student_2  
+print(student_3.moyenne_1, student_3.moyenne_2)'''
+
+## --> METHOD OVERLOADING == Surcharge des méthodes
+
+'''def addition(a=None, b=None, c=None):
+    if a!=None and b!=None and c!=None:
+        somme = a + b + c
+    elif a!=None and b!=None:
+        somme = a + b
+    elif a!=None and c!=None:
+        somme = a + c
+    elif b!=None and c!=None:
+        somme = b + c
+    else:
+        somme = a
+        
+    return somme
+        
+print(addition(12, 18, 58))'''
+
+## --> METHOD OVERRIDING == Méthode primordiale
+
+'''class Desktop:
+    def show(self):
+        print('Je suis un ordinateur de bureau !')
+        
+class Laptop(Desktop):
+    def show(self):
+        print('Je suis un ordinateur portable !')
+
+dekstop_1 = Desktop()
+laptop_1 = Laptop()
+laptop_1.show()
+dekstop_1.show()'''
+
+
 
 
