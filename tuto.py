@@ -1462,6 +1462,77 @@ laptop_1 = Laptop()
 laptop_1.show()
 dekstop_1.show()'''
 
+# Jeu de QCM en Python
 
-
-
+while True:
+    print('|'*43)
+    print("||        Bienvenue au jeu de QCM        ||")
+    print('|'*43)
+    print()
+    nom = input("Bonjour! Quel est ton nom ? : ")
+    print()
+    print(f"NB: {nom} choisit uniquement la lettre correspondante à la réponse exacte.")
+    print()
+    print("ON COMMENCE...")
+    print()
+    reponse_int = 0
+    print('''1) Qui est le président de la république du Cameroun ?
+    (a) Paul Biya
+    (b) Lavoisier TR
+    (c) Maurice Kamto
+    ''')
+    print()
+    reponse_str = input("Quelle est la bonne réponse ? : ")
+    if reponse_str == 'a':
+        print("Bonne réponse")
+        reponse_int+=1
+    else:
+        print("Mauvaise réponse")
+    print()
+    print('''2) Quelle est la capitale du Cameroun ?
+    (a) Ebolowa
+    (b) Limbé
+    (c) Aucune réponse n'est juste
+    ''')
+    print()
+    reponse_str = input("Quelle est la bonne réponse ? : ")
+    if reponse_str == 'c':
+        print("Bonne réponse")
+        reponse_int+=1
+    else:
+        print("Mauvaise réponse")
+    print()
+    print('''3) Quelle est la capitale de la région de l'Adamaoua au Cameroun ?
+    (a) Bertoua
+    (b) Ngaoundéré
+    (c) Garoua
+    ''')
+    print()
+    reponse_str = input("Quelle est la bonne réponse ? : ")
+    if reponse_str == 'b':
+        print("Bonne réponse")
+        reponse_int+=1
+    else:
+        print("Mauvaise réponse")
+    print()
+    print(f"{nom}, voici ta moyenne : {reponse_int}/3")
+    if reponse_int == 3:
+        print("Excellent !")
+    elif reponse_int == 2:
+        print("Bien")
+    elif reponse_int == 1:
+        print("Tu es Faible")
+    else:
+        print("Tu es Nul")
+    print()
+    rejouer = input("Veux-tu rejouer ? oui ou non ? : ")
+    if rejouer == 'oui':
+        print("D'accord, rejouons")
+    elif rejouer == 'non':
+        print("A bientôt !")
+        break
+    else:
+        print("Je n'ai pas compris ta réponse")
+        print("A bientôt !")
+        break
+    print()
