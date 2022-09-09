@@ -1,10 +1,10 @@
 # Programme qui demande à l'utilisateur son nom et son âge
-'''print('Bonjour tout le monde !')
+"""print('Bonjour tout le monde !')
 print("Programme qui demande le nom et l'âge d'un utilisateur.")
 age = int(input('Quel est votre âge ? : '))
 nom = input('Quel est votre nom ? : ')
 print(f"Vous vous appelez {nom} et vous avez {age} ans.")
-'''
+"""
 
 # Programme qui permet d'ajouter un élément dans une liste vide créée au préalable
 '''
@@ -34,11 +34,11 @@ Nouveau_dossier = os.path.join(chemin, 'Mon_dossier', 'sous_dossier', 'sous_sous
 os.removedirs(Nouveau_dossier)
 '''
 
-# Le module random contient plusieurs fonctions comme randint(), randrange(), uniform(), permettant de générer des valeurs numériques aléatoires
-# La fonction help() permet d'avoir de l'aide sur un élément
-# la fonction dir() permet d'avoir des information sur un élément
-# le module pprint contient la fonction pprint() permettant d'afficher les objets sous forme de liste
-# Il ne faut jamais utiliser les fonctions qui contient __ comme par exemple __file__ etc.. car ces fonctions n'ont pas été conçu pour nous mais servent au fonctionnement de Python.
+# Le module random contient plusieurs fonctions comme randint(), randrange(), uniform(), permettant de générer des
+# valeurs numériques aléatoires La fonction help() permet d'avoir de l'aide sur un élément la fonction dir() permet
+# d'avoir des information sur un élément le module pprint contient la fonction pprint() permettant d'afficher les
+# objets sous forme de liste Il ne faut jamais utiliser les fonctions qui contient __ comme par exemple __file__
+# etc.. car ces fonctions n'ont pas été conçu pour nous mais servent au fonctionnement de Python.
 '''
 import random
 from pprint import pprint
@@ -86,60 +86,60 @@ nombres_positifs_2 = [i*52 for i in liste if i > 0]
 print('nombres_positifs_2 = ', nombres_positifs_2)'''
 
 # Quelques exercices résilus sur la notion des listes de compréhension
-#---------------------------------------------------------------------------------#
+# ---------------------------------------------------------------------------------#
 
-#nombres = [1, 21, 5, 44, 4, 9, 5, 83, 29, 31, 25, 38]
-#nombres_pairs = []
-#for i in nombres:
+# nombres = [1, 21, 5, 44, 4, 9, 5, 83, 29, 31, 25, 38]
+# nombres_pairs = []
+# for i in nombres:
 #   if i % 2 == 0:
 #    nombres_pairs.append(i)
-#print(nombres_pairs)
+# print(nombres_pairs)
 
-#nombres = [1, 21, 5, 44, 4, 9, 5, 83, 29, 31, 25, 38]
-#nombres_pairs = [i for i in nombres if i%2==0]
-#print(nombres_pairs) --> [44, 4, 38]
+# nombres = [1, 21, 5, 44, 4, 9, 5, 83, 29, 31, 25, 38]
+# nombres_pairs = [i for i in nombres if i%2==0]
+# print(nombres_pairs) --> [44, 4, 38]
 
-#--------------------------------------------------------------------------------------#
+# --------------------------------------------------------------------------------------#
 
-#nombres = range(5)
-#nombres = range(-10, 10)
-#nombres_positifs = []
-#for i in nombres:
+# nombres = range(5)
+# nombres = range(-10, 10)
+# nombres_positifs = []
+# for i in nombres:
 #    if i >= 0:
 #        nombres_positifs.append(i)
-#print(nombres_positifs)
+# print(nombres_positifs)
 
-#nombres = range(5)
-#nombres = range(-10, 10)
-#nombres_positifs = [i for i in nombres if i >= 0]
-#print(nombres_positifs)  --> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# nombres = range(5)
+# nombres = range(-10, 10)
+# nombres_positifs = [i for i in nombres if i >= 0]
+# print(nombres_positifs)  --> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-#----------------------------------------------------------------------------------------#
+# ----------------------------------------------------------------------------------------#
 
-#nombres = range(5)
-#nombres_doubles = []
-#for i in nombres:
+# nombres = range(5)
+# nombres_doubles = []
+# for i in nombres:
 #    nombres_doubles.append(i*2)
-#print(nombres_doubles)
+# print(nombres_doubles)
 
-#nombres = range(5)     
-#nombres_doubles = [i*2 for i in nombres]
-#print(nombres_doubles) --> [0, 2, 4, 6, 8]
+# nombres = range(5)
+# nombres_doubles = [i*2 for i in nombres]
+# print(nombres_doubles) --> [0, 2, 4, 6, 8]
 
-#------------------------------------------------------------------------------------------#
+# ------------------------------------------------------------------------------------------#
 
-#nombres = range(10)
-#nombres_inverses = []
-#for i in nombres:
+# nombres = range(10)
+# nombres_inverses = []
+# for i in nombres:
 #    if i % 2 == 0:
 #        nombres_inverses.append(i)
 #    else:
 #        nombres_inverses.append(-i)
-#print(nombres_inverses)
+# print(nombres_inverses)
 
-#nombres = range(10)
-#nombres_inverses = [i if i%2 == 0 else -i for i in nombres ]
-#print(nombres_inverses)  --> [0, -1, 2, -3, 4, -5, 6, -7, 8, -9]
+# nombres = range(10)
+# nombres_inverses = [i if i%2 == 0 else -i for i in nombres ]
+# print(nombres_inverses)  --> [0, -1, 2, -3, 4, -5, 6, -7, 8, -9]
 
 
 # Exercice qui demande à l'utilisateur d'entrer 10 fois le nom utilisateur numéroté et commençant par 1 
@@ -150,8 +150,8 @@ print('nombres_positifs_2 = ', nombres_positifs_2)'''
 # Programme qui permet d'afficher les lettres d'un mot en l'envers
 '''mot = 'Python'
 for l in reversed(mot):
-    print(l)'''    
- 
+    print(l)'''
+
 # Programme qui permet d'utiliser la boucle while 
 '''
 continuer = 'o'
@@ -160,7 +160,7 @@ while continuer == 'o':
     continuer = input('Voulez-vous continuer ? o/n : ')
     if continuer == 'n' or continuer != 'n':
         print('FIN DU PROGRAMME. AUREVOIR !!!')'''
-        
+
 # Programme qui demande à l'utilisateur de saisir deux nombres
 '''nom = input("Bonjour ! Quel est votre nom svp ? : ")
 print(f"Bienvenue {nom}, nous allons faire un petit jeu de mathématiques")
@@ -191,7 +191,6 @@ print('')
 print('\t\t\t\tFIN DU JEU')
 print('')
 print('*********************************************************************')'''
-
 
 # Programme qui permet de gérer une liste de courses
 '''import sys
@@ -241,8 +240,7 @@ while True:
             sys.exit()
         
         print("-" * 50)'''
-        
-        
+
 # Programme du jeu mystère
 '''from random import randint
 number_to_find = randint(0, 100)
@@ -275,7 +273,7 @@ while remaining_attempts > 0:
         print(f"Tu as trouvé le nombre en {6 - remaining_attempts} essai")
         
     print("Fin du jeu")'''
-    
+
 # Programme qui permet d'implémenter un jeu
 '''
  # Règles du jeu
@@ -373,14 +371,14 @@ print("*** FIN DU JEU ***")'''
     notes = [note1, note2, note3, note4, note5]
     moyenne = sum(notes)/len(notes)
     print(f"{nom}, ta moyenne est donc Moyenne =", moyenne)'''
-    
-    # Exercice à faire
-    # 1. Récoler la valeur du porte monnaie d'une personne
-    # 2. Créer un produit qui aura pour valeur 50€
-    # 3. Afficher la nouvelle valeur du porte  monnaie de la personne qui a achetée après son achat
-    
-    # Solution de l'exercice
-    
+
+# Exercice à faire
+# 1. Récoler la valeur du porte monnaie d'une personne
+# 2. Créer un produit qui aura pour valeur 50€
+# 3. Afficher la nouvelle valeur du porte  monnaie de la personne qui a achetée après son achat
+
+# Solution de l'exercice
+
 ''' print("Bonjour madame! Bienvenue dans notre supermarché !")
     
     input("Dites Bonjour également ... : ")
@@ -416,7 +414,7 @@ if computer_price < 1000:
     print("Le prix de l'ordinateur est bien inférieur à 1000€.")
 else:
     print("Non, le prix de l'ordinateur est supérieur à 1000€.")'''
-    
+
 # Système de vérification de mot de passe
 
 '''mdp = input("Entrer votre mot de passe ICI : ")
@@ -427,7 +425,6 @@ if longeur_mdp <= 8:
     print("Mot de passe trop court")
 else:
     print("Mot de passe valide!")'''
-    
 
 # Exercice à faire: place de cinéma
 # 1. Récolter l'âge de la personne qui achète les billets "Quel est votre âge?"
@@ -540,7 +537,6 @@ elif len(generateur_mots) >= 10:
     print("Les 3 derniers mots de la liste sont donc:")
     print(generateur_mots[-3], generateur_mots[-2], generateur_mots[-1])'''
 
-
 # Afficher un message à l'utilisateur lui demandant de saisir un entier n dans le but de calculer la factorielle
 
 '''n = int(input("Saisir un entier de son choix : "))
@@ -578,8 +574,7 @@ for email in emails:
         print(f"Envoi interdit à {email}")
         continue # or break
     print(f"Email envoyé à {email}")'''
-    
-    
+
 # Exercice à faire: jeu du juste prix
 
 '''# 1. Choisir un nombre entre 1 et 1000
@@ -1040,7 +1035,7 @@ personne.SePresenter()  # Bonjour, je suis une personne et je m'appelle Jean'''
 
 # Liste d'objets
 
-#---DEFINITION---
+# ---DEFINITION---
 
 ''' class Personne:
     def __init__(self, nom = '', age = 0):
@@ -1138,7 +1133,7 @@ for nom in noms:
 
 for personne in liste_personnes:
     personne.SePresenter() '''
-    
+
 # Variables de classe
 
 '''class Personne:
@@ -1181,7 +1176,7 @@ liste_personnes = (Personne('Jean', 30),
 
 for personnes in liste_personnes:
     personnes.se_presenter()'''
-    
+
 # liste_personnes = (personne1, personne2)
 
 # personne3 = Personne()
@@ -1371,7 +1366,8 @@ eleve_2.se_presenter()'''
 # poly = many = plusieurs
 # morph = form = formes
 
-# "If it looks like a duck, swims like a duck and quacks like a duck, then it probably is a duck" --> "S'il est comme un canard, nage comme un canard et cri comme un canard, probablement il est un canard."
+# "If it looks like a duck, swims like a duck and quacks like a duck, then it probably is a duck" --> "S'il est comme
+# un canard, nage comme un canard et cri comme un canard, probablement il est un canard."
 
 # Nous allons voir 4 concepts concernant le polymorphisme en Python :
 # 1. Duck typing --> Utilisation d'une méthode venant de plusieurs classes et ayant le même nom
@@ -1379,7 +1375,9 @@ eleve_2.se_presenter()'''
 # 3. Method overloading --> Surcharge des méthodes
 # 4. Method overriding --> Méthode primordiale
 
+
 ## --> DUCK TYPING == Une méthode venant de plusieurs classes avec un nom identique
+
 
 '''class Visual_studio_code:
     def execute(self):
@@ -1403,6 +1401,7 @@ ide = Visual_studio_code() #Python() #Pycharm()
 laptop_1 = Laptop()
 
 laptop_1.code(ide)'''
+
 
 ## --> OPERATOR OVERLOADING == Surcharge des opérateurs (Union des objets)
 
@@ -1461,6 +1460,7 @@ dekstop_1 = Desktop()
 laptop_1 = Laptop()
 laptop_1.show()
 dekstop_1.show()'''
+
 
 # Jeu de QCM en Python
 
@@ -1536,25 +1536,59 @@ dekstop_1.show()'''
 #          print("A bientôt !")
 #          break
 #      print()
-     
+
 
 # QUELQUES RAPPELS
 
 # dictionnaire_1 = {'a': 1, 'b': 2, 'c':3}
 # dictionnaire_2 = {'a': 4, 'e': 5, 'f':6}
 
-#dictionnaire_fusion = dict(dictionnaire_1, **dictionnaire_2) # {**dictionnaire_1, **dictionnaire_2} # dictionnaire_1.update(dictionnaire_2)
+# dictionnaire_fusion = dict(dictionnaire_1, **dictionnaire_2) # {**dictionnaire_1, **dictionnaire_2} #
+# dictionnaire_1.update(dictionnaire_2)
 
 # dictionnaire_fusion = dictionnaire_1.copy()
 # dictionnaire_fusion.update(dictionnaire_2)
 
-#dictionnaire_1 |= dictionnaire_2
+# dictionnaire_1 |= dictionnaire_2
 
-#print(dictionnaire_fusion)
+# print(dictionnaire_fusion)
 
 
 # print('programmation'.removeprefix('pro'))
 # print('programmation'.removesuffix('tion'))
 
+# LES COLLECTIONS : LISTE ET TUPLE
 
-   
+# collections(tableaux, listes,tuples,...).
+# les collections contiennent plusieurs éléments à la fois.
+# tuple (): immutable -> non modifiable, read only.
+# liste []: mutable -> modifiable, on peut rajouter, modifier, supprimer les éléments à l'intérieur d'une liste.
+# Par abus de langagge, on dit que les tableaux sont des listes ou des tuples.
+'''
+# a = 5
+# b = 'toto'
+
+# personnes = ('Mélanie', 'Jean', 'Martin', 'Alice')
+
+# print(personnes)
+
+def informations():
+    return 'Mélanie', 27, 1.60
+
+
+infos = informations()
+# print(infos)
+
+nom, age, taille = informations()
+
+
+# print(f'Nom : {nom}')
+# print(f'Age : {age}')
+# print(f'Taille : {taille}')
+
+def informations_personne(nom, age, taille):
+    print(f"Ton nom est {nom}, ton âge {age} ans et ta taille est de {taille} m.")
+
+
+informations_personne(*infos)  # On dit qu'on unpack le tuple'''
+
