@@ -1592,3 +1592,31 @@ def informations_personne(nom, age, taille):
 
 informations_personne(*infos)  # On dit qu'on unpack le tuple'''
 
+# Manipulation des fichiers en Python
+
+
+""" La capitale du Cameroun est DOJDJDJ """
+
+''' La capitale du Cameroun est Douala '''
+
+print(" Bonjour tout le monde ")
+
+
+print(' Bonjour tout le monde ')
+
+
+class Avion:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+        
+    def dire_bonjour(self):
+        pass
+    
+    
+        
+
+
+
+
+
