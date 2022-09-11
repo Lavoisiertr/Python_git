@@ -1592,31 +1592,42 @@ def informations_personne(nom, age, taille):
 
 informations_personne(*infos)  # On dit qu'on unpack le tuple'''
 
+
+'''x = 0
+y = 1
+z = 3
+
+list1 = []
+
+if x or y or z == 0:
+    list1.append('c')
+if x or y or z == 1:
+    list1.append('d')
+if x or y or z == 3:
+    list1.append('e')
+if x or y or z == 3:
+    list1.append('f')
+    
+print(list1)'''
+
 # Manipulation des fichiers en Python
+'''
+somme = 0
 
+n = 0
 
-""" La capitale du Cameroun est DOJDJDJ """
+with open('Raoul.csv', 'r') as fichier:
+    for ligne in fichier:
+        liste = ligne.split(',')
+        note = float(liste[1])
+        n+=1
+        somme = somme + note
+moyenne = somme/n
+print(f'La moyenne de la classe est {moyenne}')'''
 
-''' La capitale du Cameroun est Douala '''
+# import pandas as pd
 
-print(" Bonjour tout le monde ")
-
-
-print(' Bonjour tout le monde ')
-
-
-class Avion:
-    def __init__(self, nom, age):
-        self.nom = nom
-        self.age = age
-        
-    def dire_bonjour(self):
-        pass
+# with open('donnees_jsn.json', 'r') as jsn:
+#     f = pd.read_csv(jsn)
     
-    
-        
-
-
-
-
-
+# print(f)
