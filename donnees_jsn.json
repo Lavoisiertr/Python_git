@@ -1,1 +1,24 @@
-{"Martial": true, "Isabelle": false, "Patrick": null}
+{   
+    "Martial": true, 
+    "Isabelle": false, 
+    "Patrick": null,
+    "Jour_de_la_semaine": ["Lundi",
+                           "Mardi",
+                           "Mercredi",
+                           "Jeudi",
+                           "Vendredi",
+                           "Samedi",
+                           "Dimanche"],
+    "Mois_de_l'annee": ["Janvier",
+                        "Fevrier",
+                        "Mars",
+                        "Avril",
+                        "Mai",
+                        "Juin",
+                        "Juillet",
+                        "Aout",
+                        "Septembre",
+                        "Octobre",
+                        "Novembre",
+                        "Decembre"]
+}

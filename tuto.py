@@ -1631,3 +1631,24 @@ print(f'La moyenne de la classe est {moyenne}')'''
 #     f = pd.read_csv(jsn)
     
 # print(f)
+
+'''import json
+
+with open("donnees_jsn.json", 'r') as json_file_read:
+    data = json.load(json_file_read)  # On appelle ça la désérialisation
+    
+#print(data)
+
+with open("new_jsn_file.json", 'w') as new_jsn_write:
+    json.dump(data,new_jsn_write)
+    
+
+with open("file.json", "w") as new_file:
+    json.dump({"Bonjour": True, "Bonsoir": False, "Bonne_apres_midi": None}, new_file)
+    
+
+with open("file.json", 'r') as new_file:
+    data1 = json.load(new_file)
+    
+print(data1)'''
+
