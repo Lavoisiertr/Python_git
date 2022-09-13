@@ -1652,3 +1652,86 @@ with open("file.json", 'r') as new_file:
     
 print(data1)'''
 
+# LES COLLECTIONS EN PYTHON
+# Exercice : Demander noms de personnes
+
+'''noms = []  # On ne peut pas utiliser la boucle for sur une liste vide []
+i = 0
+while True:
+    nom = input("Nom de la personne " + str(i+1) + " : ")
+    i+=1
+    if nom == "":
+        break
+    noms.append(nom)
+    
+for nom in noms:
+    print(nom)'''
+    
+# Exercice : Listes-Algo : Valeur la plus petite
+
+'''nom_chauffeur =         ['Patrick', 'Paul', 'Marc', 'Jean', 'Pierre', 'Marie', 'Maxime']
+distance_chauffeur_km = [   1.5,      2.2,    0.4,    0.9,     7.1,     1.1,     0.6]
+
+distance_min = distance_chauffeur_km[0]
+for distance in distance_chauffeur_km:
+    if distance < distance_min:
+        distance_min = distance
+print(f"La distance minimale est {distance_min} km")'''
+
+# LES FONCTIONS EN PYTHON
+
+'''def afficher_table_multiplication(n, min=1, max=10):
+    if min > max:
+        print("ERREUR : Le min est supérieur au max")
+        return
+    for i in range(min, max+1):
+        print(f"{i} x {n} = {i*n}")
+        
+afficher_table_multiplication(5)'''
+
+# JEU MYSTERE
+
+'''from random import randint
+
+computer_price = randint(0, 10)
+user_price = int(input("Veuillez choisir le juste prix : "))
+running = True
+
+while running:
+    if user_price == computer_price:
+        print("Bravo ! Vous avez dévinez le juste prix")
+        running = False
+    elif user_price > computer_price:
+        print("C'est moins")     
+    else:
+        print("C'est plus.")
+        running = False'''
+
+# SYSTEME D'ACCES A UN COMPTE PAR UN UTILISATEUR
+   
+'''import time
+
+username = ''
+password = ''
+
+while username != 'admin123' or password != 'success123':
+    username = input('Username : ')
+    if username != 'admin123':
+        print("Nom d'utilisateur incorrect.")
+    else:
+        print("Nom d'utilisateur Accepté!")
+    password = input('Password : ')
+    if password != 'success123':
+        print("Mot de passe erroné. Veuillez réessayer...")
+    else:
+        print('Mot de passe Accepté!')
+
+print('Please wait a few minutes...')
+print()
+time.sleep(5)
+print('Approved Access')
+print()
+print("Loading your information...")
+print()
+time.sleep(5)
+print("Loading complete.")'''
