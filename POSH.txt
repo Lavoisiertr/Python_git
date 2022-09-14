@@ -1,0 +1,320 @@
+
+
+  oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/patriksvensson.omp.json" | Invoke-Expression
+  
+  oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/Material.omp.json" | Invoke-Expression
+  
+  
+  avit | kali | bubbles or bubblesextra | MDP thothub.org : t3tD3hXnFc78eeY
+  
+  
+  
+  
+		MA CONFIGURATION DE VISUAL STUDIO CODE
+		
+{
+    "editor.minimap.enabled": false,
+    "editor.bracketPairColorization.enabled": true,
+    "breadcrumbs.enabled": false,
+    "workbench.statusBar.visible": true,
+    "editor.parameterHints.enabled": false,
+    "workbench.activityBar.visible": true,
+    "editor.selectionHighlight": false,
+    "workbench.colorTheme": "Material Theme Palenight", //"Darcula Pycharm with Light GUI",
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.linkedEditing": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.tabs.showActiveTerminal": "singleTerminal",
+    //"workbench.iconTheme": "material-icon-theme",
+    "editor.hover.enabled": false,
+    "terminal.integrated.shellIntegration.enabled": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeightBold": "bold",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#ff4081",
+        "activityBar.activeBorder": "#ff4081",
+        "list.activeSelectionForeground": "#ff4081",
+        "list.inactiveSelectionForeground": "#ff4081",
+        "list.highlightForeground": "#ff4081",
+        "scrollbarSlider.activeBackground": "#ff4081",
+        "editorSuggestWidget.highlightForeground": "#ff4081",
+        "textLink.foreground": "#ff4081",
+        "progressBar.background": "#ff4081",
+        "pickerGroup.foreground": "#ff4081",
+        "tab.activeBorder": "#ff4081",
+        "notificationLink.foreground": "#ff4081",
+        "editorWidget.resizeBorder": "#ff4081",
+        "editorWidget.border": "#ff4081",
+        "settings.modifiedItemIndicator": "#ff4081",
+        "settings.headerForeground": "#ff4081",
+        "panelTitle.activeBorder": "#ff4081",
+        "breadcrumb.activeSelectionForeground": "#ff4081",
+        "menu.selectionForeground": "#ff4081",
+        "menubar.selectionForeground": "#ff4081",
+        "editor.findMatchBorder": "#ff4081",
+        "selection.background": "#ff408140",
+        "statusBarItem.remoteBackground": "#ff4081"
+    },
+    "materialTheme.accent": "Pink",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.guides.highlightActiveIndentation": false,
+    //"editor.matchBrackets": "never",
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "none",
+    "workbench.editorAssociations": {},
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "window.zoomLevel": 0,
+    "editor.colorDecorators": true,
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope":[
+                    "storage.type.class.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                }
+            },
+            {
+                "scope":[
+                    "storage.type.function.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                }
+            },
+            /*{
+                "scope":[
+                    "entity.name.function"
+                ],
+                "settings": {
+                    "foreground": "#8888c6",
+                }
+            }*/
+            {
+                "scope":[
+                    "keyword.control.flow.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                    "fontStyle":"",
+                }
+            },
+            {
+                "scope":[
+                    "keyword.operator.logical.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                }
+            },
+            {
+                "scope":[
+                    "keyword.control.import.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                    "fontStyle":"",
+                }
+            },
+            {
+                "scope":[
+                    "keyword.control.import.from.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                    "fontStyle":"",
+                }
+            },
+            {
+                "scope":[
+                    "constant.language.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                }
+            },
+            {
+                "scope":[
+                    "comment.line.number-sign.python"
+                ],
+                "settings": {
+                    "fontStyle":"",
+                }
+            },
+            {
+                "scope":[
+                    "string.quoted.double.single-line.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold"
+                }
+            },
+            {
+                "scope":[
+                    "string.quoted.single.single-line.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "punctuation.definition.string.begin.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "punctuation.definition.string.end.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "string.quoted.double.block.python"
+                ],
+                "settings": {
+                    "foreground": "#676E95",
+                }
+            },
+            {
+                "scope":[
+                    "string.quoted.single.block.python"
+                ],
+                "settings": {
+                    "foreground": "#676E95",
+                }
+            },
+            {
+                "scope":[
+                    "constant.numeric.integer.decimal.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "punctuation.section.class.begin.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "constant.numeric.float.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "punctuation.section.function.begin.python"
+                ],
+                "settings": {
+                    "foreground": "#A6ACCD",
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "variable.parameter.function.language.special.self.python"
+                ],
+                "settings": {
+                    "foreground": "#89DDFF",
+                    "fontStyle":"",
+                }
+            },
+            {
+                "scope":[
+                    "variable, variable.parameter, support.variable, variable.language, support.constant, meta.definition.variable entity.name.function, meta.function-call.arguments"
+                ],
+                "settings": {
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "entity.name.type.class.python"
+                ],
+                "settings": {
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "entity.name.function.python"
+                ],
+                "settings": {
+                    "fontStyle":"bold",
+                }
+            },
+            {
+                "scope":[
+                    "entity.name.function"
+                ],
+                "settings": {
+                    "foreground": "#cc00ff",
+                }
+            },
+            {
+                "scope":[
+                    "constant.other.placeholder.python"
+                ],
+                "settings": {
+                    "foreground": "#cc7832",
+                }
+            },
+            {
+                "scope":[
+                    "constant.character.escape.linefeed.python"
+                ],
+                "settings": {
+                    "foreground": "#66ff99",
+                }
+            },
+            {
+                "scope":[
+                    "constant.character.escape.tab.python"
+                ],
+                "settings": {
+                    "foreground": "#66ff99",
+                }
+            },
+            {
+                "scope":[
+                    "constant.character.escape.return.python"
+                ],
+                "settings": {
+                    "foreground": "#66ff99",
+                }
+            },
+        ]
+    },
+
+}
+
+
+
+
