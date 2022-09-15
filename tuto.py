@@ -1735,5 +1735,3 @@ print("Loading your information...")
 print()
 time.sleep(5)
 print("Loading complete.")'''
-
-print('Bonjour')
